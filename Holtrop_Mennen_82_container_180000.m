@@ -2,7 +2,7 @@ function pp = Holtrop_Mennen_82_container_180000()
 
 %%%% Open water resistance %%%%
 %%%% %%%%
-%%%% Holtrop-Mennen 82 %%%%
+%%%% Holtrop-Mennen 82 Method %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Reference: Ship_Project_A_Report1_FINAL.pdf
 %% Input
@@ -13,18 +13,18 @@ T = 17;
 v = 0.1:0.5144:23*0.5144;
 nu = 1.187 * 10^(-6);
 rho = 1025;
-Cp = 251067/(0.9980*B*T*L);% ¨Œ/(Cm*B*d*L) % Prismatic coefficient
+Cp = 251067/(0.9980*B*T*L);% Â¨Å’/(Cm*B*d*L) % Prismatic coefficient
 Cb = 0.56; % Block coefficient
 Cm = 0.9980; % Cm = Am/(B*d) % Mid-ship coefficient
-Cwp = 0.8855; % £¿£¿£¿ Cwp = Aw/(L*B) % Water plane coefficient
-Abt = 14; % £¿£¿£¿ % Transversal area of bulb
-hb = 3; % £¿£¿£¿ % Height of center of transversal crossection of bulb at waterline
+Cwp = 0.8855; % Â£Â¿Â£Â¿Â£Â¿ Cwp = Aw/(L*B) % Water plane coefficient
+Abt = 14; % Â£Â¿Â£Â¿Â£Â¿ % Transversal area of bulb
+hb = 3; % Â£Â¿Â£Â¿Â£Â¿ % Height of center of transversal crossection of bulb at waterline
 At = 0; % Immersed transom area at 0 speed
 g = 9.81;
 Vdisp = 312622; % Displacement volume
-lcb = 200; % £¿£¿£¿ % Longitudinal center of buoyancy
+lcb = 200; % Â£Â¿Â£Â¿Â£Â¿ % Longitudinal center of buoyancy
 S = (1.54*T+0.45*B+0.904*B*Cb+0.026*Cb*B/T)*Lpp; % Wetted surface area for Twin p Twin R Ship
-Sapp = 0; % £¿£¿£¿ % Surface area of the Azipod-unit outside of the hull
+Sapp = 0; % Â£Â¿Â£Â¿Â£Â¿ % Surface area of the Azipod-unit outside of the hull
 %% Resistance components
 Fn = v./sqrt(g*L); % Froude number
 c12 = (T/L)^0.2228446;
