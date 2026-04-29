@@ -1,22 +1,22 @@
 % clc;clear;
 function dataOut_Tyukun = case_list_turning_zigzag_steering_gear_container_18000(shipName,testType,manoeuver_angle,h,t_rudderexecute,t_final)
-path_free = genpath('master_project-master');
-addpath(path_free);
-path_free = genpath('examples_mb_edit');
-addpath(path_free);
-path_free = genpath('gnc_mfiles_mb_edit');
-addpath(path_free);
-path_free = genpath('vessel_models_mb_edit');
-addpath(path_free);
-path_free = genpath('plot_mb');
-addpath(path_free);
-path = genpath('E:\111\学生\朱金善\学生\船舶阻力与KVLCC2\Holtrop_Mennen_82\');
-addpath(path);
+% path_free = genpath('master_project-master');
+% addpath(path_free);
+% path_free = genpath('examples_mb_edit');
+% addpath(path_free);
+% path_free = genpath('gnc_mfiles_mb_edit');
+% addpath(path_free);
+% path_free = genpath('vessel_models_mb_edit');
+%addpath(path_free);
+% path_free = genpath('plot_mb');
+% addpath(path_free);
+% path = genpath('E:\111\瀛︾敓\鏈遍噾鍠刓瀛︾敓\鑸硅埗闃诲姏涓嶬VLCC2\Holtrop_Mennen_82\');
+% addpath(path);
 global pp_Holtrop_Mennen_82_container_180000;
 pp_Holtrop_Mennen_82_container_180000 = Holtrop_Mennen_82_container_180000();
 global pp_Holtrop_Mennen_82_KVLCC2; % turn circle figure better than pp_Holtrop_Mennen_82_container_180000
-path = genpath('E:\文档\实验室\zhu\船舶阻力与KVLCC2\Holtrop_Mennen_82');
-addpath(path);
+% path = genpath('E:\鏂囨。\瀹為獙瀹zhu\鑸硅埗闃诲姏涓嶬VLCC2\Holtrop_Mennen_82');
+% addpath(path);
 pp_Holtrop_Mennen_82_KVLCC2 = Holtrop_Mennen_82_KVLCC2();
 
 delta_c = 20*pi/180; % rudder angle for maneuver (rad)
